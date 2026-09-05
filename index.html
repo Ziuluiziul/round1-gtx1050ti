@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Playbook Ollama CPU - GTX 1050 Ti / Pascal</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.45;color:#111}
+.card{border:1px solid #ddd;border-radius:10px;padding:1rem 1.1rem;margin:1rem 0;background:#fafafa}
+img{max-width:200px;height:auto;display:block;margin:.5rem 0}
+textarea{font-family:ui-monospace,monospace;font-size:.8rem;width:100%;box-sizing:border-box;min-height:4.5rem}
+button{margin-top:.4rem;padding:.4rem .7rem;cursor:pointer}
+.badge{display:inline-block;background:#e8f5e9;color:#1b5e20;padding:.15rem .5rem;border-radius:999px;font-size:.85rem}
+.note{color:#555;font-size:.92rem}
+a{color:#0b57d0}
+</style>
+</head>
+<body>
+<h1>Playbook Ollama <em>CPU</em> - hardware Pascal / 4&nbsp;GB</h1>
+<p><span class="badge">CPU path medido</span> · GPU HOLD ate driver &ge;570</p>
+<p>SKU: checklist + playbook para rodar Ollama local em maquina fraca (ex.: GTX 1050 Ti). <strong>Sem claim de GPU</strong> neste pacote - smoke medido em CPU (tinyllama).</p>
+<ul>
+<li>Gist: <a href="https://gist.github.com/Ziuluiziul/37af1dbd6c6da40a368664f917567b06">OFERTA + PLAYBOOK + EMV</a></li>
+<li>Space PIX: <a href="https://huggingface.co/spaces/Ziulluizziul/round1-pix-r50">round1-pix-r50</a></li>
+<li>Hub: <a href="https://ziuluiziul.github.io/round1-cumulunimbus/">Cumulunimbus ROUND1</a></li>
+</ul>
+<div class="card">
+<h2>R$ 50 - amostra / checklist CPU</h2>
+<p>Playbook curto + checklist install Ollama (CPU) + PIX.</p>
+<img src="qr_r50.png" alt="PIX QR R0"/>
+<textarea readonly id="pix50">00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58</textarea>
+<button type="button" onclick="navigator.clipboard.writeText(document.getElementById('pix50').value)">Copiar PIX R$50</button>
+</div>
+<div class="card">
+<h2>R$ 100 - playbook + smoke report</h2>
+<p>Playbook completo + template de medicao + 1 sessao async PT-BR.</p>
+<img src="qr_r100.png" alt="PIX QR REMV50=$(tr -d '\n' < /workspace/revenue-missions/gtx1050ti/PIX_R50_EMV.txt)
+EMV100=$(tr -d '\n' < /workspace/revenue-missions/gtx1050ti/PIX_R100_EMV.txt)
+mkdir -p /workspace/revenue-missions/gtx1050ti/pages
+cp -f /workspace/pix-clean/out/qr_2.png /workspace/revenue-missions/gtx1050ti/pages/qr_r50.png
+cp -f /workspace/pix-clean/out/qr_3.png /workspace/revenue-missions/gtx1050ti/pages/qr_r100.png
+cat > /workspace/revenue-missions/gtx1050ti/pages/index.html << EOF
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Playbook Ollama CPU - GTX 1050 Ti / Pascal</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.45;color:#111}
+.card{border:1px solid #ddd;border-radius:10px;padding:1rem 1.1rem;margin:1rem 0;background:#fafafa}
+img{max-width:200px;height:auto;display:block;margin:.5rem 0}
+textarea{font-family:ui-monospace,monospace;font-size:.8rem;width:100%;box-sizing:border-box;min-height:4.5rem}
+button{margin-top:.4rem;padding:.4rem .7rem;cursor:pointer}
+.badge{display:inline-block;background:#e8f5e9;color:#1b5e20;padding:.15rem .5rem;border-radius:999px;font-size:.85rem}
+.note{color:#555;font-size:.92rem}
+a{color:#0b57d0}
+</style>
+</head>
+<body>
+<h1>Playbook Ollama <em>CPU</em> - hardware Pascal / 4&nbsp;GB</h1>
+<p><span class="badge">CPU path medido</span> · GPU HOLD ate driver &ge;570</p>
+<p>SKU: checklist + playbook para rodar Ollama local em maquina fraca (ex.: GTX 1050 Ti). <strong>Sem claim de GPU</strong> neste pacote - smoke medido em CPU (tinyllama).</p>
+<ul>
+<li>Gist: <a href="https://gist.github.com/Ziuluiziul/37af1dbd6c6da40a368664f917567b06">OFERTA + PLAYBOOK + EMV</a></li>
+<li>Space PIX: <a href="https://huggingface.co/spaces/Ziulluizziul/round1-pix-r50">round1-pix-r50</a></li>
+<li>Hub: <a href="https://ziuluiziul.github.io/round1-cumulunimbus/">Cumulunimbus ROUND1</a></li>
+</ul>
+<div class="card">
+<h2>R\$ 50 - amostra / checklist CPU</h2>
+<p>Playbook curto + checklist install Ollama (CPU) + PIX.</p>
+<img src="qr_r50.png" alt="PIX QR R$50"/>
+<textarea readonly id="pix50">${EMV50}</textarea>
+<button type="button" onclick="navigator.clipboard.writeText(document.getElementById('pix50').value)">Copiar PIX R\$50</button>
+</div>
+<div class="card">
+<h2>R\$ 100 - playbook + smoke report</h2>
+<p>Playbook completo + template de medicao + 1 sessao async PT-BR.</p>
+<img src="qr_r100.png" alt="PIX QR R$100"/>
+<textarea readonly id="pix100">${EMV100}</textarea>
+<button type="button" onclick="navigator.clipboard.writeText(document.getElementById('pix100').value)">Copiar PIX R\$100</button>
+</div>
+<p class="note">Recebedor: <strong>LUIZ</strong>. Fonte PIX = texto EMV/CRC (tag 54). PNG so se bater com o texto. Sem inventar VRAM.</p>
+</body>
+</html>
+EOF
+ls -la /workspace/revenue-missions/gtx1050ti/pages/
+# verify hub patch
+rg -n 'round1-gtx1050ti|round1-pix-r50|GTX1050ti' /workspace/revenue-missions/cumulunimbus/index.html
+00"/>
+<textarea readonly id="pix100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205</textarea>
+<button type="button" onclick="navigator.clipboard.writeText(document.getElementById('pix100').value)">Copiar PIX R$100</button>
+</div>
+<p class="note">Recebedor: <strong>LUIZ</strong>. Fonte PIX = texto EMV/CRC (tag 54). PNG so se bater com o texto. Sem inventar VRAM.</p>
+</body>
+</html>
